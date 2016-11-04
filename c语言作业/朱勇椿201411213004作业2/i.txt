@@ -1,0 +1,26 @@
+#include<stdio.h>
+double fact(int n);
+int main(void)
+{
+	int m,n;
+	double a,b,c,d;
+	scanf("%d""%d",&m,&n);
+	a=fact(n);
+	b=fact(m);
+	c=fact(n-m);
+	d=a/b/c;
+	printf("%.0f",d);
+	return 0;
+}
+
+double fact(int n)
+{
+	int i;
+    double product;
+    product=1;
+    for(i=1;i<=n;i++){
+	product=product*i;
+}
+return product;
+}
+

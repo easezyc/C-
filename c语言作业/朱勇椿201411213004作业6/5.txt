@@ -1,0 +1,23 @@
+#include<stdio.h>
+int fib(int n);
+int main(void)
+{
+	int m,n,y,i,d;
+	d=0;
+	scanf("%d%d",&m,&n);
+	if(m==1)i=1;
+	else i=1;
+	while(fib(i)<=n){
+		i++;
+		y=fib(i);
+		if(fib(i)>=m&&fib(i)<=n){d++;
+			if(d==1)printf("%d",y);
+			else printf(" %d",y);}}
+			return 0;
+	}
+int fib(int n)
+	{
+	if(n==0)return 0;
+	else if(n==1)return 1;
+	else return fib(n-1)+fib(n-2);
+	}

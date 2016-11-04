@@ -1,0 +1,26 @@
+#include <stdio.h>
+int even(int a);
+int main(void)
+{
+	int a,s,y;
+	scanf("%d",&a);
+	s = 0;
+	while (a>0)
+	{
+		y=even(a);
+		if (y==0)
+		s = s+a;
+		scanf("%d",&a);
+	}
+	printf("%d",s);
+	return 0;		
+}
+
+int even(int a)
+{
+	int y;
+	if (a%2==0)
+		y=1;
+	else y=0;
+	return y;
+}

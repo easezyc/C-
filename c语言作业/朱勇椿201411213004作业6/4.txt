@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main(void)
+{
+	int n;
+	char ch,b;
+	n=0;
+	ch=getchar();
+	if(ch!=' ')n++;	
+	while(ch!='\n'&&ch!=EOF){
+			b=ch;
+			ch=getchar();
+			if(b==' '&&ch!=' ')
+				n++;}
+		printf("%d",n);
+		return 0;
+}

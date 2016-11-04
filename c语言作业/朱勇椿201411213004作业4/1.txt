@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<math.h>
+int main(void)
+{
+	int d,f;
+	double sum,i,eps;
+	d=1;
+	f=1;
+	sum=0;
+	i=1;
+	scanf("%lf",&eps);
+	while(fabs(i>=eps)){
+		i=f*1.0/d;
+		sum=sum+i;
+		f=-f;
+		d=d+3;
+	}
+	printf("%.6f\n",sum);
+	return 0;
+}

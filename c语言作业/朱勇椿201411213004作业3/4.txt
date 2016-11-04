@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<math.h>
+int main(void)
+{
+	int a,b,c;
+	double p,area,perimeter;
+	scanf("%d""%d""%d",&a,&b,&c);
+	if(a+b>c&&b+c>a&&a+c>b){
+	perimeter=a+b+c;
+	p=perimeter/2;
+	area=sqrt(p*(p-a)*(p-b)*(p-c));
+	printf("%.2f  ""%.2f",area,perimeter);}
+	else{
+		printf("These sides do not correspond to a valid triange");
+		}
+	return 0;
+}

@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+int main(void)
+
+{
+
+	int math,English,computer,average;
+
+	math=87;
+
+	English=72;
+
+	computer=93;
+
+	average=(English+computer+math)/3;
+
+	printf("%d\n",average);
+
+	return 0;
+
+}

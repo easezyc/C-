@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char b,a[20];
+	int i=0;
+	while((a[i]=getchar())!='\n')
+		i++;
+	a[i]='\0';
+	b=getchar();
+	i=0;
+	while(a[i]!='\0'){
+		if(a[i]!=b)printf("%c",a[i]);
+		i++;
+	}
+	return 0;
+}

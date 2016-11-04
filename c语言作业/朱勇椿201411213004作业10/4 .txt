@@ -1,0 +1,31 @@
+#include<stdio.h>
+struct time{
+int hour;
+int minute;
+int second;};
+void f(struct time time,int n);
+int main()
+{
+    int n;
+    struct time time;
+    scanf("%d:%d:%d",&time.hour,&time.minute,&time.second);
+    scanf("%d",&n);
+    f(time,n);
+    return 0;
+}
+void f(struct time time,int n)
+{
+    if(n+time.second>60)
+        {
+            time.second=time.second+n-60;
+            time.minute++;
+            if(time.minute>=60)
+            {
+                time.minute-=60;
+                time.hour++;
+                if(time.hour==24)time.hour=0;
+                }
+        }
+        else time.second+=n;
+    printf("%d:%d:%d",time.hour,time.minute,time.second);
+}

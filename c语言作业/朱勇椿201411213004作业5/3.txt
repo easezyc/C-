@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<math.h>
+double dist(double x1,double y1,double x2,double y2);
+int main(void)
+{
+         double x1,y1,x2,y2,l;
+         int n,i;
+		 while(scanf("%lf ""%lf ""%lf ""%lf",&x1,&y1,&x2,&y2)!=EOF)
+		 {
+			l=dist(x1,y1,x2,y2);
+			printf("%.2f\n",l);
+		 }
+         return 0;
+}
+double dist(double x1,double y1,double x2,double y2)
+{
+       double l;
+       l=sqrt(pow(x2-x1,2)+pow(y2-y1,2));
+       return l;
+}    

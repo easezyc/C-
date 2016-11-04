@@ -1,0 +1,23 @@
+#include<stdio.h>
+int search(int *a,int n,int x);
+int main(void)
+{
+	int a[10];
+	int n,i,x,t;
+	scanf("%d",&n);
+	for(i=0;i<n;i++)
+		scanf("%d",&a[i]);
+	scanf("%d",&x);
+	t=search(a,n,x);
+	if(t==-1)printf("Not found\n");
+	else printf("%d\n",t);
+	return 0;
+}
+int search(int *a,int n,int x)
+{
+	int i;
+	for(i=0;i<n;i++)
+		if(*(a+i)==x){return i;
+		break;}
+		return -1;
+}

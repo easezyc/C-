@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main(void)
+{
+	int n,i,a;
+	double sum,d;
+	sum=1;
+	scanf("%d",&n);
+	for(i=1;i<=n;i++){
+		d=1;
+		for(a=1;a<=i;a++)
+		d=d*a;
+		sum=sum+1.0/d;
+	}
+	printf("%.4f",sum);
+	return 0;
+}

@@ -1,0 +1,21 @@
+clear;
+z0=importdata('shiqiz0.txt');
+z1=importdata('shiqiz1.txt');
+z2=importdata('shiqiz2.txt');
+z3=importdata('shiqiz3.txt');
+z4=importdata('shiqiz4.txt');
+[x,y,z]=meshgrid(1:1:15,1:1:5,1:1:5);
+[x,y,z]=meshgrid(-2:.2:2,-2:.2:2,-2:.2:2);
+[x,y,z]=meshgrid(1:1:5,1:1:15,1:1:5);
+q(:,:,1)=z0;
+q(:,:,2)=z1;
+q(:,:,3)=z2;
+q(:,:,4)=z3;
+q(:,:,5)=z4;
+xs=[1:1:5];
+ys=[1:1:15];
+zs=[1:1:5];
+slice(x,y,z,q,xs,ys,zs)
+shading interp
+xlabel('width'),ylabel('length'),zlabel('height')
+alpha(0.5)

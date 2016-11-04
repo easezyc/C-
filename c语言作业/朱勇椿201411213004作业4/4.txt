@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main(void)
+{
+	int a,b,i,n,c;
+	scanf("%d",&n);
+	for(i=1;i<=n;i++){
+	scanf("%d""%d",&a,&b);
+	for(a=a;a<=b;a++){
+		for(c=2;c<=a/2;c++)
+			if(a%c==0)break;
+			if(c>a/2&&a!=1)printf("%d ",a);
+    }	 
+	printf("\n");
+	}
+	return 0;
+}
+	

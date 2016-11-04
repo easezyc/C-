@@ -1,0 +1,24 @@
+#include<stdio.h>
+double fact(int n);
+int main(void)
+{
+	int n,i;
+	double sum,d;
+	sum=1;
+	scanf("%d",&n);
+	for(i=1;i<=n;i++){
+		d=fact(i);
+		sum=sum+1.0/d;
+	}
+	printf("%.4f",sum);
+	return 0;
+}
+double fact(int n)
+{
+	int a;
+        double b;
+	b=1;
+	for(a=1;a<=n;a++)
+	b=b*a;
+	return b;
+}

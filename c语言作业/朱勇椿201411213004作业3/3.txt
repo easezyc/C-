@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main(void)
+{
+	int g,i,n;
+	n=5;
+	for(i=1;i<=n;i++){
+		scanf("%d",&g);
+		if(g<60)printf("fail\n");
+		else printf("pass\n");
+	}
+	return 0;
+}

@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main(void)
+{
+	int s[6];
+	int i,x,j;
+	for(i=0;i<5;i++)
+	scanf("%d",&s[i]);
+	scanf("%d",&x);
+	for(i=0;i<5;i++)
+	if(x==s[i]){printf("Yes\n");
+		printf("%d",i);
+		break;}
+	if(i==5){for(i=0;i<5;i++)
+		if(x<s[i])break;
+		for(j=5;j>i;j--)
+		s[j]=s[j-1];
+		s[i]=x;
+		printf("No\n");
+		for(i=0;i<6;i++){if(i==0)printf("%d",s[i]);
+			else printf(" %d",s[i]);}
+	}
+	return 0;
+}
+		

@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main(void)
+{
+	int salary;
+	double tax;
+	scanf("%d",&salary);
+	if(salary<=850)tax=0;
+	else if(salary>850&&salary<=1350)
+	tax=(salary-850)*5.0/100;
+	else if(salary>1350&&salary<=2850)
+	tax=(salary-850)*10.0/100;
+	else if(salary>2850&&salary<=5850)
+	tax=(salary-850)*15.0/100;
+	else tax=(salary-850)*20.0/100;
+	printf("%.2f",tax);
+	return 0;
+}

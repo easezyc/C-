@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main(void)
+{
+	char w[80];
+	int i=0,x=0;
+	while((w[i]=getchar())!='\n'&&i<=80){
+	if(w[i]>'A'&&w[i]<='Z')
+	if(w[i]!='E'&&w[i]!='I'&&w[i]!='O'&&w[i]!='U')
+		x++;
+	i++;}
+	printf("%d",x);
+	return 0;
+}

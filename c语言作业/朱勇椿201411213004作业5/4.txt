@@ -1,0 +1,26 @@
+#include<stdio.h>
+int prime(int m);
+int main(void)
+{
+       int m,n,sum,c,y;
+       scanf("%d""%d",&m,&n);
+       sum=0;
+       c=0;
+       for(m=m;m<=n;m++){
+       y=prime(m);
+       if(y==1){c++;
+       sum=sum+m;}
+       }
+       printf("%d ""%d",c,sum);
+       return 0;
+}
+int prime(int m)
+{
+       int y,i;
+       for(i=2;i<=m/2;i++)
+       if(m%i==0){y=0;
+       break;}
+       if(i>m/2&&m!=1)y=1;
+       else y=0;
+       return y;
+}
